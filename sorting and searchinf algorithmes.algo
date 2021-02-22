@@ -1,0 +1,17 @@
+ALGORITHM tri
+VAR
+    T : ARRAY_OF INTEGER[L];
+    n:INTEGER;
+    i,j,x:INTEGER;
+BEGIN
+    FOR i FROM 1 TO n STEP 1  DO
+        z = T[i]
+        j = i
+        WHILE (j > 0 && T[j - 1] > z) DO
+            T[j] == T[j - 1]
+            j == j - 1
+            T[j] == z
+        END_WHILE
+        arr[j] = z
+    END_FOR
+END
